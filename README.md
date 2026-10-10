@@ -59,7 +59,7 @@ The project is for people who need a small, inspectable method for long-running 
 | DCL-03 | v0.3 | [10.5281/zenodo.21830264](https://doi.org/10.5281/zenodo.21830264) |
 | Validator | v1.1 | [10.5281/zenodo.21833853](https://doi.org/10.5281/zenodo.21833853) |
 
-See **[VERSIONS.md](VERSIONS.md)** for status notes and **[GLOSSARY.md](GLOSSARY.md)** for the vocabulary used across repositories.
+See **[VERSIONS.md](VERSIONS.md)** for status notes, **[GLOSSARY.md](GLOSSARY.md)** for the vocabulary used across repositories, and **[ecosystem.yml](ecosystem.yml)** for the same architecture in machine-readable form.
 
 ## Repository map
 
