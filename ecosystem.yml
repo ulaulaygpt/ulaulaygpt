@@ -1,0 +1,56 @@
+schema_version: 1
+project:
+  name: "El Canal — Applied Cognitive Symbology (ACS)"
+  website: "https://elcanal.es"
+  maintainer: "Manuel Barrera Anglada"
+  orcid: "0009-0000-8891-7021"
+
+publication_model:
+  zenodo: "archival and citation authority"
+  github: "versionable, inspectable and reproducible technical surface"
+  elcanal_es: "human-facing conceptual navigation"
+
+repositories:
+  - id: cap
+    repository: "https://github.com/ulaulaygpt/elcanal-cap"
+    role: "operational protocol for longitudinal human–LLM work"
+    current_version: "v0.3"
+    doi: "10.5281/zenodo.23138399"
+    depends_on: []
+
+  - id: ptc-ctp
+    repository: "https://github.com/ulaulaygpt/ptc-ctp"
+    role: "normative transparency and traceability specifications"
+    components:
+      - {id: "R-01", version: "v1.1", doi: "10.5281/zenodo.21406620"}
+      - {id: "PTC-F", version: "v1.2", doi: "10.5281/zenodo.21406680"}
+      - {id: "ARCH", version: "v0.3", doi: "10.5281/zenodo.21406665"}
+      - {id: "FRS-01", version: "v0.3", doi: "10.5281/zenodo.21830122"}
+      - {id: "PKG-02", version: "v0.4", doi: "10.5281/zenodo.21830169"}
+      - {id: "DCL-03", version: "v0.3", doi: "10.5281/zenodo.21830264"}
+    depends_on: []
+
+  - id: validator
+    repository: "https://github.com/ulaulaygpt/ptc-validator"
+    role: "reference implementation of PTC/CTP"
+    current_version: "v1.1"
+    doi: "10.5281/zenodo.21833853"
+    depends_on:
+      - "ptc-ctp"
+
+  - id: corpus
+    repository: "https://github.com/ulaulaygpt/elcanal-corpus"
+    role: "machine-readable registry of the public El Canal corpus"
+    public_website_snapshot_unique_dois: 62
+    internal_explicit_relation_edges: 237
+    depends_on:
+      - "public Zenodo metadata"
+      - "public elcanal.es corpus view"
+
+boundaries:
+  excludes:
+    - "private operator memory"
+    - "credentials"
+    - "sensitive operational data"
+    - "unpublished drafts"
+    - "ambiguous candidates"
