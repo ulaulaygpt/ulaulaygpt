@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/brand/el-canal-banner.png" alt="El Canal — Applied Cognitive Symbology (ACS)" width="100%">
+</p>
+
 # El Canal — Applied Cognitive Symbology (ACS)
 
 A public research and technical ecosystem for **longitudinal human–AI collaboration, transparency, traceability and human agency**.
